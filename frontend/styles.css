@@ -1,0 +1,50 @@
+body {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 20px;
+  background-color: aliceblue;
+  font-family: Arial, sans-serif;
+}
+
+.cabeza {
+    display: flex;
+    align-items: center; /* Centra verticalmente la imagen y el nav */
+    gap: 40px; /* Espacio entre la imagen y el nav */
+}
+
+.logo {
+    width: 150px;   /* Ajusta el tamaño de la imagen */
+    height: auto;
+    object-fit: contain;
+    margin-right: 16px;
+}
+
+nav {
+    display: flex; /* Flexbox para alinear los enlaces */
+    justify-content: center; /* Centrar los enlaces horizontalmente */
+}
+
+nav a {
+    margin-right: 48px; /* Más espacio entre enlaces */
+    text-decoration: none; /* Sin subrayado */
+    color: inherit; /* Color del texto heredado */
+}
+
+nav a:last-child { /* Último enlace sin margen derecho */
+    margin-right: 0; /* Eliminar margen derecho del último enlace */
+}
+
+
+@media (max-width: 600px) { /* Estilos para pantallas pequeñas */
+    nav {
+        flex-direction: column; /* Cambiar a columna */
+        align-items: center; /* Centrar los enlaces */
+    }
+    nav a {
+        margin-right: 0; /* Sin margen derecho */
+        margin-bottom: 24px; /* Más espacio vertical en móvil */
+    }
+    nav a:last-child { /* Último enlace sin margen */
+        margin-bottom: 0; /* Eliminar margen inferior del último enlace */
+    }
+}
