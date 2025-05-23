@@ -52,7 +52,19 @@ nav a:last-child { /* Último enlace sin margen derecho */
     margin-right: 0; /* Eliminar margen derecho del último enlace */
 }
 
+.login-register {
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+    margin: 0 40px 8px 0; /* Arriba a la derecha, separado de la barra */
+}
 
+.login-register a {
+    text-decoration: none;
+    color: #1976d2;
+    font-weight: bold;
+    font-size: 1em;
+}
 
 .search-form {
     display: flex;
